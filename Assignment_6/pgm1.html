@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Tejasvat R(SWAP)</title>
+    </head>
+    <body>
+        <h2>
+            Open console for reversed values
+        </h2>
+        <script>
+            function reverseNumber(num) {
+                    const reversedNum = parseInt(num.toString().split('').reverse().join(''), 10);
+                    const isPalindrome = num === reversedNum;
+                    console.log("Reversed Number:", reversedNum);
+                    console.log("Is Palindromic:", isPalindrome ? 'Yes' : 'No');
+                }
+                reverseNumber(12345); 
+                reverseNumber(12321); 
+        </script>
+    </body>
+</html>
