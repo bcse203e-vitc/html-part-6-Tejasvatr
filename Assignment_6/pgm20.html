@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Tejasvat R</title>
+    </head>
+    <body>
+        <h2>Open console for occurence of each character in string</h2>
+        <script>
+                function oc(s) {
+                    let c = {};
+                    for (let ch of s) c[ch] = (c[ch] || 0) + 1;
+                    return c;
+                }
+                console.log(oc("hello")); 
+                console.log(oc("banana"));
+
+        </script>
+    </body>
+</html>
