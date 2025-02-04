@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Tejasvat R</title>
+</head>
+
+<body>
+    <h2>
+        Open console for fibonacci series
+    </h2>
+    <script>
+        function generatefibo(n) {
+                const fibonacci = [];
+                let a = 0, b = 1;
+
+                for (let i = 0; i < n; i++) {
+                    fibonacci.push(a);
+                    const next = a + b;
+                    a = b;
+                    b = next;
+                }
+                console.log(fibonacci.join(', '));
+            }
+            generatefibo(7); 
+
+    </script>
+</body>
+
+</html>
