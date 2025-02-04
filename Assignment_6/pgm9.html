@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Tejasvat R</title>
+</head>
+
+<body>
+    <h2>
+        Open console for least common multiple
+    </h2>
+    <script>
+        function gcd(a, b) {
+                while (b !== 0) {
+                    const temp = b;
+                    b = a % b;
+                    a = temp;
+                }
+                return Math.abs(a);
+            }
+            function lcm(a, b) {
+                return Math.abs(a * b) / gcd(a, b);
+            }
+            console.log(lcm(12, 18)); 
+    </script>
+</body>
+
+</html>
