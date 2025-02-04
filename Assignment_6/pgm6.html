@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Tejasvat R</title>
+</head>
+
+<body>
+    <h2>
+        Open console for celsius to fahrenheit and vice versa
+    </h2>
+    <script>
+        function convertTemp(value, unit) {
+                let result;
+                if (unit === 'C') {
+                    result = (value * 9 / 5) + 32;
+                    console.log(`${value}°C is ${result.toFixed(2)}°F`);
+                } else if (unit === 'F') {
+                    result = (value - 32) * 5 / 9;
+                    console.log(`${value}°F is ${result.toFixed(2)}°C`);
+                } else {
+                    console.log("Invalid");
+                }
+            }
+            convertTemp(25, 'C');
+            convertTemp(77, 'F');  
+    </script>
+</body>
+
+</html>
