@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Tejasvat R</title>
+</head>
+
+<body>
+    <h2>
+        Open console for pangram
+    </h2>
+    <script>
+        function isPangram(sentence) {
+                const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+                const lowercase = sentence.toLowerCase();
+                const uniqueLetters = new Set();
+                for (let char of lowercase) {
+                    if (alphabet.includes(char)) {
+                        uniqueLetters.add(char);
+                    }
+                }
+
+                return uniqueLetters.size === 26;
+            }
+            const inputSentence = "The quick brown fox jumps over the lazy dog";
+            if (isPangram(inputSentence)) {
+                console.log("It is a pangram");
+            } else {
+                console.log("It is not a pangram");
+            }
+    </script>
+</body>
+
+</html>
