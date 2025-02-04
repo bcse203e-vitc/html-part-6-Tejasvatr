@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Tejasvat R</title>
+    </head>
+    <body>
+        <h2>Open console for longest word</h2>
+        <script>
+                function lw(s) {
+                 return s.split(" ").reduce((a, b) => (b.length > a.length ? b : a), "");
+                }
+                console.log(lw("Find the longest word here")); 
+                console.log(lw("JavaScript is awesome")); 
+                console.log(lw("Hi")); 
+        </script>
+    </body>
+</html>
