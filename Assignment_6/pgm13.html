@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Tejasvat R</title>
+</head>
+
+<body>
+    <h2>
+        Open console for second smallest/largest number 
+    </h2>
+    <script>
+        function finds(arr) {
+                const uniqueArr = [...new Set(arr)];
+                uniqueArr.sort((a, b) => a - b); 
+
+                const secondSmallest = uniqueArr[1] !== undefined ? uniqueArr[1] : null;
+                const secondLargest = uniqueArr[uniqueArr.length - 2] !== undefined ? uniqueArr[uniqueArr.length - 2] : null;
+                console.log(`Second Smallest: ${secondSmallest}`);
+                console.log(`Second Largest: ${secondLargest}`);
+            }
+            const inputArray = [4, 2, 9, 1, 5, 6];
+            finds(inputArray);
+    </script>
+</body>
+
+</html>
