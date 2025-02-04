@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Tejasvat R</title>
+</head>
+
+<body>
+    <h2>
+        Open console for armstrong number
+    </h2>
+    <script>
+         function armstrong(num) {
+                const digits = num.toString().split('');
+                const numDigits = digits.length;
+                const sum = digits.reduce((acc, digit) => acc + Math.pow(parseInt(digit), numDigits), 0);
+                return sum === num;
+            }
+            console.log(armstrong(153));  
+            console.log(armstrong(9474)); 
+            console.log(armstrong(123));  
+    </script>
+</body>
+
+</html>
