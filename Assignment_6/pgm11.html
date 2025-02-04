@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Tejasvat R</title>
+</head>
+
+<body>
+    <h2>
+        Open console for vowels and consonants count
+    </h2>
+    <script>
+        function countvc(str) {
+                const vowels = 'aeiouAEIOU';
+                let vowelcount = 0;
+                let consonantcount = 0;
+                const vowelList = [];
+
+                for (let char of str) {
+                    if (vowels.includes(char)) {
+                        vowelcount++;
+                        vowelList.push(char);
+                    } else if (char.match(/[a-zA-Z]/)) {
+                        consonantcount++;
+                    }
+                }
+                console.log(`Vowels: ${vowelcount} (${vowelList.join(', ')})`);
+                console.log(`Consonants: ${consonantcount}`);
+            }
+            countvc("JavaScript");
+    </script>
+</body>
+
+</html>
