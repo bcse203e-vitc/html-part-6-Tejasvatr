@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Tejasvat R</title>
+    </head>
+    <body>
+        <h2>Open console for reversing a number</h2>
+        <script>
+                function rn(n) {
+                return parseInt(n.toString().split("").reverse().join("")) * Math.sign(n);
+            }
+            console.log(rn(12345));
+            console.log(rn(-9876));  
+            console.log(rn(100));    
+
+        </script>
+    </body>
+</html>
