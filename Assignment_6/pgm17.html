@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Tejasvat R</title>
+</head>
+
+<body>
+    <h2>
+        Open console for binary
+    </h2>
+    <script>
+       function decimalToBinary(num) {
+            if (num < 0) {
+                throw new Error("Negative numbers are not supported.");
+            }
+            if (num === 0) {
+                return '0';
+            }
+
+            let binary = '';
+            while (num > 0) {
+                binary = (num % 2) + binary; 
+                num = Math.floor(num / 2);   
+            }
+            return binary;
+        }
+        const inputNumber = 10;
+        const binaryOutput = decimalToBinary(inputNumber);
+        console.log(`Binary of ${inputNumber}: ${binaryOutput}`); 
+    </script>
+</body>
+
+</html>
