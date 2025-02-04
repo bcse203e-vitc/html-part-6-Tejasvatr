@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Tejasvat R</title>
+    </head>
+    <body>
+        <h2>Open console for first non repeating</h2>
+        <script>
+                function f(str) {
+                let c = {};
+                for (let ch of str) c[ch] = (c[ch] || 0) + 1;
+                for (let ch of str) if (c[ch] === 1) return ch;
+                return null;
+            }
+            console.log(f("swiss")); 
+            console.log(f("racecar"));
+            console.log(f("aabb"));
+   
+        </script>
+    </body>
+</html>
