@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Tejasvat R</title>
+</head>
+
+<body>
+    <h2>
+        Open console for non repeating
+    </h2>
+    <script>
+        function firstNonRepeatingCharacter(str) {
+                const charCount = {};
+                for (let char of str) {
+                    charCount[char] = (charCount[char] || 0) + 1;
+                }
+
+                for (let char of str) {
+                    if (charCount[char] === 1) {
+                        return char;
+                    }
+                }
+                return null;
+            }
+
+            const inputString = "swiss";
+            const result = firstNonRepeatingCharacter(inputString);
+            console.log(`First non-repeating character: ${result}`);
+    </script>
+</body>
+
+</html>
